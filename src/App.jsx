@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <div className=" text-centerw-full max-w-xl  rounded-xl  px-6 mx-auto my-32 bg-gray-600 ">
-        <h1 className="text-center text-white text-2xl font-semibold ">
+        <h1 className=" text-center text-white text-2xl font-semibold ">
           Password Generator
         </h1>
         <div className="flex flex-col md:flex-row gap-2  rounded-2xl p-6 overflow-hidden my-2 ">
@@ -54,8 +54,8 @@ function App() {
             COPY
           </button>
         </div>
-        <div className="text-sm md:flex gap-x-3 justify-around  ">
-          <div className="flex flex-col md:flex-row item-center gap-x-2 overflow-hidden mb-5">
+        <div className="text-sm md:flex gap-x-3 justify-around text-white ">
+          <div className="flex flex-col md:flex-row item-center gap-x-2 overflow-hidden">
             <input
               type="range"
               min={8}
@@ -66,7 +66,7 @@ function App() {
                 setLength(e.target.value);
               }}
             />
-            <label htmlFor="length">Length:{length}</label>
+            <label>Length:{length}</label>
             <input
               type="checkbox"
               onChange={() => {
