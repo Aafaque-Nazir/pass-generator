@@ -33,11 +33,11 @@ function App() {
 
   return (
     <>
-      <div className=" text-centerw-full max-w-xl  rounded-xl mx-auto px-6 my-10 bg-gray-600 ">
+      <div className=" text-centerw-full max-w-xl  rounded-xl  px-6 mx-auto my-32 bg-gray-600 ">
         <h1 className="text-center text-white text-2xl font-semibold ">
           Password Generator
         </h1>
-        <div className="flex gap-2  rounded-2xl p-6 overflow-hidden my-2 ">
+        <div className="flex flex-col md:flex-row gap-2  rounded-2xl p-6 overflow-hidden my-2 ">
           <input
             className="  flex items-center justify-center outline-none w-full p-2  bg-white rounded "
             type="text"
@@ -54,8 +54,8 @@ function App() {
             COPY
           </button>
         </div>
-        <div className="text-sm flex gap-x-3 justify-around ">
-          <div className="flex item-center gap-x-2 overflow-hidden mb-5">
+        <div className="text-sm md:flex gap-x-3 justify-around  ">
+          <div className="flex flex-col md:flex-row item-center gap-x-2 overflow-hidden mb-5">
             <input
               type="range"
               min={8}
